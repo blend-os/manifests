@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch=".." />
+
+  <remote  name="aur"
+           fetch="https://aur.archlinux.org" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <default remote="github" />
+
+  <!-- Projects and their packaging -->
+  <project path="projects/akshara" name="blend-os/akshara"></project>
+  <project path="packages/akshara" name="blend-os/akshara-pkg"></project>
+
+  <project path="projects/blend" name="blend-os/blend"></project>
+  <project path="packages/blend" name="blend-os/blend-pkg"></project>
+
+  <project path="projects/blend-inst" name="blend-os/blend-inst"></project>
+  <project path="packages/blend-inst" name="blend-os/blend-inst-pkg"></project>
+
+  <project path="projects/blend-keyring" name="blend-os/blend-keyring"></project>
+  <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg"></project>
+
+  <project path="projects/blend-web-store" name="blend-os/blend-web-store"></project>
+  <project path="packages/blend-web-store" name="blend-os/blend-web-store-pkg"></project>
+
+  <project path="projects/blendos-first-setup" name="blend-os/blendos-first-setup"></project>
+  <project path="packages/blendos-first-setup" name="blend-os/blendos-first-setup-pkg"></project>
+
+  <project path="projects/jade-gui" name="blend-os/jade-gui"></project>
+  <project path="packages/jade-gui" name="blend-os/jade-gui-pkg"></project>
+
+  <!-- Independent packages -->
+  <project path="packages/filesystem-blend" name="blend-os/filesystem-blend"></project>
+  <project path="packages/grub-blend" name="blend-os/grub-blend-pkg"></project>
+  <project path="packages/lsb-release-blend" name="blend-os/lsb-release-blend"></project>
+  <project path="packages/plymouth" name="blend-os/plymouth-pkg"></project>
+  <project path="packages/waydroid-blend" name="blend-os/waydroid-blend-pkg"></project>
+</manifest>
