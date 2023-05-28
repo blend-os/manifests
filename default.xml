@@ -2,15 +2,18 @@
 <manifest>
 
   <remote  name="github"
-           fetch=".." />
+           fetch="https://github.com/{}" />
 
   <remote  name="aur"
-           fetch="https://aur.archlinux.org" />
+           fetch="https://aur.archlinux.org/{}" />
 
   <remote  name="private"
-           fetch="ssh://git@github.com" />
+           fetch="ssh://git@github.com/{}" />
 
   <default remote="github" />
+
+  <!-- Build tools -->
+  <project path="build" name="blend-os/blendos_build"></project>
 
   <!-- Projects and their packaging -->
   <project path="projects/akshara" name="blend-os/akshara"></project>
@@ -19,13 +22,7 @@
   <project path="projects/blend" name="blend-os/blend"></project>
   <project path="packages/blend" name="blend-os/blend-pkg"></project>
 
-  <project path="projects/blend-inst" name="blend-os/blend-inst"></project>
-  <project path="packages/blend-inst" name="blend-os/blend-inst-pkg"></project>
-
-  <project path="projects/blend-keyring" name="blend-os/blend-keyring"></project>
-  <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg"></project>
-
-  <project path="projects/blend-web-store" name="blend-os/blend-web-store"></project>
+  <project path="projects/blend-web-store" name="blend-os/web-store"></project>
   <project path="packages/blend-web-store" name="blend-os/blend-web-store-pkg"></project>
 
   <project path="projects/blendos-first-setup" name="blend-os/blendos-first-setup"></project>
@@ -35,9 +32,44 @@
   <project path="packages/jade-gui" name="blend-os/jade-gui-pkg"></project>
 
   <!-- Independent packages -->
+  <project path="packages/blend-inst" name="blend-os/blend-inst"></project>
+  <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg"></project>
   <project path="packages/filesystem-blend" name="blend-os/filesystem-blend"></project>
   <project path="packages/grub-blend" name="blend-os/grub-blend-pkg"></project>
   <project path="packages/lsb-release-blend" name="blend-os/lsb-release-blend"></project>
   <project path="packages/plymouth" name="blend-os/plymouth-pkg"></project>
   <project path="packages/waydroid-blend" name="blend-os/waydroid-blend-pkg"></project>
+
+  <!-- AUR packages -->
+  <project path="packages/adw-gtk3" name="adw-gtk3" remote="aur"></project>
+  <project path="packages/python-gbinder" name="python-gbinder" remote="aur"></project>
+  <project path="packages/libglibutil" name="libglibutil" remote="aur"></project>
+  <project path="packages/libgbinder" name="libgbinder" remote="aur"></project>
+  <project path="packages/waydroid-image" name="waydroid-image" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-dash-to-dock" name="gnome-shell-extension-dash-to-dock" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-blur-my-shell" name="gnome-shell-extension-blur-my-shell" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-appindicator" name="gnome-shell-extension-appindicator" remote="aur"></project>
+
+  <!-- Output profiles -->
+  <profile name="gnome" dm="gdm">
+    <!-- WayDroid -->
+    <pkg>waydroid-blend-git</pkg>
+    <pkg>waydroid-image</pkg>
+    <!-- GNOME packages -->
+    <pkg>gnome</pkg>
+    <pkg>gnome-software</pkg>
+    <pkg>gnome-shell-extension-blur-my-shell</pkg>
+    <pkg>gnome-shell-extension-appindicator</pkg>
+  </profile>
+
+  <profile name="plasma" dm="sddm">
+    <!-- WayDroid -->
+    <pkg>waydroid-blend-git</pkg>
+    <pkg>waydroid-image</pkg>
+    <!-- Plasma packages -->
+    <pkg>plasma</pkg>
+    <pkg>plasma-wayland-session</pkg>
+    <pkg>kde-utilities-meta</pkg>
+    <pkg>kde-system-meta</pkg>
+  </profile>
 </manifest>
