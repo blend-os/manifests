@@ -31,6 +31,9 @@
   <project path="projects/jade-gui" name="blend-os/jade-gui"></project>
   <project path="packages/jade-gui" name="blend-os/jade-gui-pkg"></project>
 
+  <project path="projects/system" name="blend-os/system"></project>
+  <project path="packages/system" name="blend-os/system-pkg"></project>
+
   <!-- Independent packages -->
   <project path="packages/blend-inst" name="blend-os/blend-inst"></project>
   <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg"></project>
