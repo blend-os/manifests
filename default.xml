@@ -85,7 +85,7 @@
 
   <profile name="cinnamon" dm="lightdm">
     <!-- Cinnamon packages -->
-    <pkg>xfce4</pkg>
+    <pkg>cinnamon</pkg>
     <pkg>lightdm-slick-greeter</pkg>
   </profile>
 
