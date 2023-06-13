@@ -75,4 +75,41 @@
     <pkg>kde-utilities-meta</pkg>
     <pkg>kde-system-meta</pkg>
   </profile>
+
+  <profile name="xfce" dm="lightdm">
+    <!-- Plasma packages -->
+    <pkg>xfce4</pkg>
+    <pkg>lightdm</pkg>
+    <pkg>lightdm-gtk-greeter</pkg>
+  </profile>
+
+  <profile name="cinnamon" dm="lightdm">
+    <!-- Cinnamon packages -->
+    <pkg>xfce4</pkg>
+    <pkg>lightdm-slick-greeter</pkg>
+  </profile>
+
+  <profile name="mate" dm="lightdm">
+    <!-- MATE packages -->
+    <pkg>mate</pkg>
+    <pkg>lightdm-slick-greeter</pkg>
+  </profile>
+
+  <profile name="budgie" dm="gdm">
+    <!-- Budgie packages -->
+    <pkg>budgie</pkg>
+    <pkg>gdm</pkg>
+  </profile>
+
+  <profile name="deepin" dm="sddm">
+    <!-- Deepin packages -->
+    <pkg>deepin</pkg>
+    <pkg>sddm</pkg>
+  </profile>
+
+  <profile name="lxqt" dm="sddm">
+    <!-- LXQT packages -->
+    <pkg>lxqt</pkg>
+    <pkg>sddm</pkg>
+  </profile>
 </manifest>
