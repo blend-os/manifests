@@ -76,29 +76,28 @@
     <pkg>kde-system-meta</pkg>
   </profile>
 
-  <profile name="xfce" dm="gdm">
+  <profile name="xfce" dm="lightdm">
     <!-- Plasma packages -->
     <pkg>xfce4</pkg>
     <pkg>lightdm</pkg>
-    <pkg>gdm</pkg>
+    <pkg>lightdm-gtk-greeter</pkg>
   </profile>
 
-  <profile name="cinnamon" dm="gdm">
+  <profile name="cinnamon" dm="lightdm">
     <!-- Cinnamon packages -->
     <pkg>cinnamon</pkg>
-    <pkg>gdm</pkg>
+    <pkg>xed</pkg>
+    <pkg>xviewer</pkg>
+    <pkg>xplayer</pkg>
+    <pkg>blueberry</pkg>
+    <pkg>gnome-terminal</pkg>
+    <pkg>lightdm-gtk-greeter</pkg>
   </profile>
 
-  <profile name="mate" dm="gdm">
+  <profile name="mate" dm="lightdm">
     <!-- MATE packages -->
     <pkg>mate</pkg>
-    <pkg>gdm</pkg>
-  </profile>
-
-  <profile name="budgie" dm="gdm">
-    <!-- Budgie packages -->
-    <pkg>budgie</pkg>
-    <pkg>gdm</pkg>
+    <pkg>lightdm-gtk-greeter</pkg>
   </profile>
 
   <profile name="deepin" dm="sddm">
