@@ -87,8 +87,8 @@
     <!-- Cinnamon packages -->
     <pkg>cinnamon</pkg>
     <pkg>xed</pkg>
-    <pkg>xviewer</pkg>
-    <pkg>xplayer</pkg>
+    <pkg>evince</pkg>
+    <pkg>totem</pkg>
     <pkg>blueberry</pkg>
     <pkg>gnome-terminal</pkg>
     <pkg>lightdm-gtk-greeter</pkg>
