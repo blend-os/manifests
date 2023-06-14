@@ -76,23 +76,23 @@
     <pkg>kde-system-meta</pkg>
   </profile>
 
-  <profile name="xfce" dm="lightdm">
+  <profile name="xfce" dm="gdm">
     <!-- Plasma packages -->
     <pkg>xfce4</pkg>
     <pkg>lightdm</pkg>
-    <pkg>lightdm-gtk-greeter</pkg>
+    <pkg>gdm</pkg>
   </profile>
 
-  <profile name="cinnamon" dm="lightdm">
+  <profile name="cinnamon" dm="gdm">
     <!-- Cinnamon packages -->
     <pkg>cinnamon</pkg>
-    <pkg>lightdm-slick-greeter</pkg>
+    <pkg>gdm</pkg>
   </profile>
 
-  <profile name="mate" dm="lightdm">
+  <profile name="mate" dm="gdm">
     <!-- MATE packages -->
     <pkg>mate</pkg>
-    <pkg>lightdm-slick-greeter</pkg>
+    <pkg>gdm</pkg>
   </profile>
 
   <profile name="budgie" dm="gdm">
