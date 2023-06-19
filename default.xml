@@ -42,6 +42,7 @@
   <project path="packages/lsb-release-blend" name="blend-os/lsb-release-blend"></project>
   <project path="packages/plymouth" name="blend-os/plymouth-pkg"></project>
   <project path="packages/waydroid-blend" name="blend-os/waydroid-blend-pkg"></project>
+  <project path="packages/zsync2" name="blend-os/zsync2-pkg"></project>
 
   <!-- AUR packages -->
   <project path="packages/adw-gtk3" name="adw-gtk3" remote="aur"></project>
