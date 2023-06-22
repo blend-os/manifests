@@ -53,7 +53,10 @@
   <project path="packages/gnome-shell-extension-dash-to-dock" name="gnome-shell-extension-dash-to-dock" remote="aur"></project>
   <project path="packages/gnome-shell-extension-blur-my-shell" name="gnome-shell-extension-blur-my-shell" remote="aur"></project>
   <project path="packages/gnome-shell-extension-appindicator" name="gnome-shell-extension-appindicator" remote="aur"></project>
+  <project path="packages/hyprland-nvidia" name="hyprland-nvidia" remote="aur"></project>
+  <project path="packages/xdg-desktop-portal-hyprland-git" name="xdg-desktop-portal-hyprland-git" remote="aur"></project>
 
+  
   <!-- Output profiles -->
   <profile name="gnome" dm="gdm">
     <!-- WayDroid -->
@@ -66,50 +69,9 @@
     <pkg>gnome-shell-extension-appindicator</pkg>
   </profile>
 
-  <profile name="plasma" dm="sddm">
-    <!-- WayDroid -->
-    <pkg>waydroid-blend-git</pkg>
-    <pkg>waydroid-image</pkg>
-    <!-- Plasma packages -->
-    <pkg>plasma</pkg>
-    <pkg>plasma-wayland-session</pkg>
-    <pkg>kde-utilities-meta</pkg>
-    <pkg>kde-system-meta</pkg>
+  <profile name="hyprland" dm="sddm">
+    <!-- My packages -->
+    <pkg>gnome-software</pkg>
+    <pkg>hyprland-nvidia</pkg>
+    <pkg>xdg-desktop-portal-hyprland-git</pkg>    
   </profile>
-
-  <profile name="xfce" dm="lightdm">
-    <!-- Plasma packages -->
-    <pkg>xfce4</pkg>
-    <pkg>lightdm</pkg>
-    <pkg>lightdm-gtk-greeter</pkg>
-  </profile>
-
-  <profile name="cinnamon" dm="lightdm">
-    <!-- Cinnamon packages -->
-    <pkg>cinnamon</pkg>
-    <pkg>xed</pkg>
-    <pkg>evince</pkg>
-    <pkg>totem</pkg>
-    <pkg>blueberry</pkg>
-    <pkg>gnome-terminal</pkg>
-    <pkg>lightdm-gtk-greeter</pkg>
-  </profile>
-
-  <profile name="mate" dm="lightdm">
-    <!-- MATE packages -->
-    <pkg>mate</pkg>
-    <pkg>lightdm-gtk-greeter</pkg>
-  </profile>
-
-  <profile name="deepin" dm="sddm">
-    <!-- Deepin packages -->
-    <pkg>deepin</pkg>
-    <pkg>sddm</pkg>
-  </profile>
-
-  <profile name="lxqt" dm="sddm">
-    <!-- LXQT packages -->
-    <pkg>lxqt</pkg>
-    <pkg>sddm</pkg>
-  </profile>
-</manifest>
