@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com/{}" />
+  <remote name="github"
+    fetch="https://github.com/{}" />
 
-  <remote  name="aur"
-           fetch="https://aur.archlinux.org/{}" />
+  <remote name="aur"
+    fetch="https://aur.archlinux.org/{}" />
 
-  <remote  name="private"
-           fetch="ssh://git@github.com/{}" />
+  <remote name="private"
+    fetch="ssh://git@github.com/{}" />
 
   <default remote="github" />
 
@@ -50,9 +50,12 @@
   <project path="packages/libglibutil" name="libglibutil" remote="aur"></project>
   <project path="packages/libgbinder" name="libgbinder" remote="aur"></project>
   <project path="packages/waydroid-image" name="waydroid-image" remote="aur"></project>
-  <project path="packages/gnome-shell-extension-dash-to-dock" name="gnome-shell-extension-dash-to-dock" remote="aur"></project>
-  <project path="packages/gnome-shell-extension-blur-my-shell" name="gnome-shell-extension-blur-my-shell" remote="aur"></project>
-  <project path="packages/gnome-shell-extension-appindicator" name="gnome-shell-extension-appindicator" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-dash-to-dock"
+    name="gnome-shell-extension-dash-to-dock" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-blur-my-shell"
+    name="gnome-shell-extension-blur-my-shell" remote="aur"></project>
+  <project path="packages/gnome-shell-extension-appindicator"
+    name="gnome-shell-extension-appindicator" remote="aur"></project>
 
   <!-- Output profiles -->
   <profile name="gnome" dm="gdm">
@@ -98,12 +101,14 @@
   <profile name="mate" dm="lightdm">
     <!-- MATE packages -->
     <pkg>mate</pkg>
+    <pkg>mate-extra</pkg>
     <pkg>lightdm-gtk-greeter</pkg>
   </profile>
 
   <profile name="deepin" dm="sddm">
     <!-- Deepin packages -->
     <pkg>deepin</pkg>
+    <pkg>deepin-extra</pkg>
     <pkg>sddm</pkg>
   </profile>
 
