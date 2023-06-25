@@ -64,6 +64,7 @@
     <pkg>waydroid-image</pkg>
     <!-- GNOME packages -->
     <pkg>gnome</pkg>
+    <pkg>adw-gtk3</pkg>
     <pkg>gnome-software</pkg>
     <pkg>gnome-shell-extension-blur-my-shell</pkg>
     <pkg>gnome-shell-extension-appindicator</pkg>
